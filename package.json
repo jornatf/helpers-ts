@@ -1,6 +1,6 @@
 {
     "name": "helpers-ts",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Some simple Helpers to manipulate strings and arrays for JavaScript and Typescript.",
     "main": "./lib/index.js",
     "types": "./lib/index.d.ts",
