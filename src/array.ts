@@ -1,7 +1,5 @@
 /**
  * crossJoin()
- * @param  {...any} arrays
- * @returns {array}
  */
 export const crossJoin = (...arrays: any) => {
     if (arrays.length === 1) {
@@ -16,9 +14,6 @@ export const crossJoin = (...arrays: any) => {
 
 /**
  * keyExists()
- * @param {string} key
- * @param {any} collection
- * @returns {boolean}
  */
 export const keyExists = (key: string, collection: any) => {
     if (Array.isArray(collection)) {
@@ -32,8 +27,6 @@ export const keyExists = (key: string, collection: any) => {
 
 /**
  * firstKey()
- * @param {array} arr
- * @returns {string}
  */
 export const firstKey = (arr: any[]) => {
     return Array.isArray(arr) && arr.length > 0 ? arr[0] : null
@@ -41,8 +34,6 @@ export const firstKey = (arr: any[]) => {
 
 /**
  * lastKey()
- * @param {array} arr
- * @returns {string}
  */
 export const lastKey = (arr: any[]) => {
     return Array.isArray(arr) && arr.length > 0 ? arr[arr.length - 1] : null
@@ -50,9 +41,6 @@ export const lastKey = (arr: any[]) => {
 
 /**
  * explode()
- * @param {string} str
- * @param {string} sep
- * @returns {array}
  */
 export const explode = (str: string, sep: string = ',') => {
     return str.split(sep)
@@ -60,10 +48,26 @@ export const explode = (str: string, sep: string = ',') => {
 
 /**
  * implode()
- * @param {array} arr
- * @param {string} sep
- * @returns {string}
  */
 export const implode = (arr: any[], sep: string = ' ') => {
     return arr.join(sep)
+}
+
+/**
+ * isEmpty()
+ */
+export const isEmpty = (arr: any[]) => {
+    return Boolean(arr.length == 0)
+}
+
+/**
+ * shuffle()
+ */
+export const shuffle = (arr: any[]) => {
+    const shuffled = [...arr]
+    for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1))
+        ;[shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]]
+    }
+    return shuffled
 }

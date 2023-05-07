@@ -8,6 +8,8 @@ import {
     randomStr,
     replaceStr,
     squish,
+    contains,
+    containsAll,
 } from './string'
 
 import {
@@ -17,6 +19,8 @@ import {
     lastKey,
     implode,
     explode,
+    isEmpty,
+    shuffle,
 } from './array'
 
 export {
@@ -35,4 +39,8 @@ export {
     lastKey,
     implode,
     explode,
+    contains,
+    containsAll,
+    isEmpty,
+    shuffle,
 }

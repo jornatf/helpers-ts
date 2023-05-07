@@ -1,8 +1,5 @@
 /**
  * slugify()
- * @param {string} str
- * @param {string}
- * @returns {string}
  */
 export const slugify = (str: string, sep: string = '_') => {
     return str.toLowerCase().replace(/ /g, sep)
@@ -10,8 +7,6 @@ export const slugify = (str: string, sep: string = '_') => {
 
 /**
  * toCamel()
- * @param {string} str
- * @returns {string}
  */
 export const toCamel = (str: string) => {
     return str
@@ -22,8 +17,6 @@ export const toCamel = (str: string) => {
 
 /**
  * toPascal()
- * @param {string} str
- * @returns {string}
  */
 export const toPascal = (str: string) => {
     return str
@@ -34,8 +27,6 @@ export const toPascal = (str: string) => {
 
 /**
  * isUuid()
- * @param {string} str
- * @returns {boolean}
  */
 export const isUuid = (str: string) => {
     const regex =
@@ -45,7 +36,6 @@ export const isUuid = (str: string) => {
 
 /**
  * uuid()
- * @returns {string}
  */
 export const uuid = () => {
     let dt = new Date().getTime()
@@ -59,9 +49,6 @@ export const uuid = () => {
 
 /**
  * limitStr()
- * @param {string} str
- * @param {integer} maxLen
- * @returns {string}
  */
 export const limitStr = (str: string, maxLength: number) => {
     return str.length > maxLength ? str.slice(0, maxLength) + '...' : str
@@ -69,8 +56,6 @@ export const limitStr = (str: string, maxLength: number) => {
 
 /**
  * randomStr()
- * @param {integer} length
- * @returns {string}
  */
 export const randomStr = (length: number) => {
     let result = ''
@@ -85,10 +70,6 @@ export const randomStr = (length: number) => {
 
 /**
  * replace()
- * @param {sting} search
- * @param {string} replacement
- * @param {string} str
- * @returns {string}
  */
 export const replaceStr = (
     search: string,
@@ -100,11 +81,25 @@ export const replaceStr = (
 
 /**
  * squish()
- * @param {string} str
- * @param {integer} numSpaces
- * @returns {string}
  */
 export const squish = (str: string, numSpaces: number = 1) => {
     const regex = new RegExp(`\\s{${numSpaces},}`, 'g')
     return str.replace(regex, ' '.repeat(numSpaces)).trim()
+}
+
+/**
+ * contains()
+ */
+export const contains = (word: string, str: string) => {
+    return str.includes(word)
+}
+
+/**
+ * containsAll()
+ */
+export const containsAll = (words: string[], str: string) => {
+    for (const word of words) {
+        return !str.includes(word) ? false : true
+    }
+    return true
 }

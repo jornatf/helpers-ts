@@ -121,6 +121,24 @@ Trims and removes extra spaces between words with a specified number of space.
 squish(' Hello     world ', 5) // 'Hello world'
 ```
 
+#### `contains()`
+
+Checks if a word is in a string.
+
+```javascript
+contains('world', 'Hello world') // true
+contains('earth', 'Hello world') // false
+```
+
+#### `containsAll()`
+
+Check if many words are in a string.
+
+```javascript
+containsAll(['string', 'test'], 'This is a string to test.') // true
+containsAll(['number', 'test'], 'This is a string to test.') // false
+```
+
 ### Arrays
 
 #### `crossJoin()`
@@ -172,6 +190,22 @@ explode('Foo,Bar') // ['Foo', 'Bar']
 implode('Foo Bar', ' ') // ['Foo', 'Bar']
 ```
 
+#### `isEmpty()`
+
+Checks if an array is empty.
+
+```javascript
+isEmpty([1, 2, 3]) // true
+```
+
+#### `shuffle()`
+
+Shuffles array keys.
+
+```javascript
+shuffle([1, 2, 3, 4]) // [3, 1, 4, 2]
+```
+
 ## Changelog
 
 > Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
@@ -192,3 +226,7 @@ implode('Foo Bar', ' ') // ['Foo', 'Bar']
 The MIT License (MIT).
 
 > Please see [License File](LICENSE.md) for more information.
+
+```
+
+```

@@ -8,6 +8,8 @@ import {
     randomStr,
     replaceStr,
     squish,
+    contains,
+    containsAll,
 } from '../src/string'
 
 describe('toCamel()', () => {
@@ -96,5 +98,29 @@ describe('squish()', () => {
     test('trims and removes extra spaces between words without space', () => {
         const str = '   Hello      world!  '
         expect(squish(str, 0)).toEqual('Helloworld!')
+    })
+})
+
+describe('contains()', () => {
+    test('returns "true" if string contains a specific word', () => {
+        const str = 'Hello world'
+        expect(contains('world', str)).toBe(true)
+    })
+
+    test('returns "false" if string doesn\'t contain a specific word', () => {
+        const str = 'Hello world'
+        expect(contains('earth', str)).toBe(false)
+    })
+})
+
+describe('containsAll()', () => {
+    test('returns "true" if string contains specific words', () => {
+        const str = 'This is a string to test.'
+        expect(containsAll(['string', 'test'], str)).toBe(true)
+    })
+
+    test('returns "false" if string doesn\'t contain specific words', () => {
+        const str = 'This is a string to test.'
+        expect(containsAll(['number', 'test'], str)).toBe(false)
     })
 })

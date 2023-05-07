@@ -5,6 +5,8 @@ import {
     lastKey,
     implode,
     explode,
+    isEmpty,
+    shuffle,
 } from '../src/array'
 
 describe('crossJoin()', () => {
@@ -73,5 +75,25 @@ describe('implode(), explode()', () => {
 
     test('should convert string to array', () => {
         expect(explode('Hello world', ' ')).toEqual(['Hello', 'world'])
+    })
+})
+
+describe('isEmpty()', () => {
+    test('returns "true" if array is empty', () => {
+        expect(isEmpty([])).toBe(true)
+    })
+
+    test('returns "false" if array is not empty', () => {
+        expect(isEmpty([1, 2, 3])).toBe(false)
+    })
+})
+
+describe('shuffle()', () => {
+    test('returns shuffled array keys', () => {
+        const arr = [1, 2, 3, 4, 5]
+        const shuffled = shuffle(arr)
+        expect(shuffled).not.toEqual(arr)
+        expect(shuffled).toHaveLength(arr.length)
+        expect(new Set(shuffled)).toEqual(new Set(arr))
     })
 })
