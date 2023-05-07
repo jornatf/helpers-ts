@@ -195,7 +195,8 @@ implode('Foo Bar', ' ') // ['Foo', 'Bar']
 Checks if an array is empty.
 
 ```javascript
-isEmpty([1, 2, 3]) // true
+isEmpty([]) // true
+isEmpty([1, 2, 3]) // false
 ```
 
 #### `shuffle()`
