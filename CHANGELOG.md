@@ -4,10 +4,10 @@
 
 New helpers added:
 
-- `isEmpty()`: Checks if array is empty.
-- `shuffle()`: Shuffles array keys.
-- `contains()`: Checks if a word is in a string.
-- `containsAll()`: Check if many words are in a string.
+-   `isEmpty()`: Checks if array is empty.
+-   `shuffle()`: Shuffles array keys.
+-   `contains()`: Checks if a word is in a string.
+-   `containsAll()`: Check if many words are in a string.
 
 > Find example in the [README](README.md) file.
 
