@@ -1,3 +1,5 @@
+import * as crypto from 'node:crypto'
+
 /**
  * Converts a string into slug.
  * @example slugify('Hello world') // 'hello_world'
