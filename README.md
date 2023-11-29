@@ -210,7 +210,7 @@ shuffle([1, 2, 3, 4]) // [3, 1, 4, 2]
 
 ### Numbers
 
-#### `randBetween`
+#### `randBetween()`
 
 Returns a random number between `min` and `max`.
 
