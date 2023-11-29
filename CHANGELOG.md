@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.2.2 - 2023-11-29
+
+`README.md` updated.
+
 ## v1.2.1 - 2023-11-29
 
 Fixed errors after Github test Action.
@@ -8,7 +12,7 @@ Fixed errors after Github test Action.
 
 New helper added:
 
--   `randomBetween()`: Returns a random number between two intervals
+- `randomBetween()`: Returns a random number between two intervals
 
 > Find example in the [README](README.md) file.
 
@@ -18,10 +22,10 @@ I improved `uuid()` function with crypto's Node.js and I added more complete com
 
 New helpers added:
 
--   `isEmpty()`: Checks if array is empty.
--   `shuffle()`: Shuffles array keys.
--   `contains()`: Checks if a word is in a string.
--   `containsAll()`: Check if many words are in a string.
+- `isEmpty()`: Checks if array is empty.
+- `shuffle()`: Shuffles array keys.
+- `contains()`: Checks if a word is in a string.
+- `containsAll()`: Check if many words are in a string.
 
 > Find example in the [README](README.md) file.
 
