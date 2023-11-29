@@ -215,7 +215,7 @@ shuffle([1, 2, 3, 4]) // [3, 1, 4, 2]
 Returns a random number between `min` and `max`.
 
 ```javascript
-randBetween(5,10) // 8
+randBetween(5, 10) // 8
 ```
 
 ## Changelog

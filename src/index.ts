@@ -23,9 +23,7 @@ import {
     shuffle,
 } from './array'
 
-import {
-    randBetween,
-} from './number'
+import { randBetween } from './number'
 
 export {
     toCamel,
@@ -47,5 +45,5 @@ export {
     containsAll,
     isEmpty,
     shuffle,
-    randBetween
+    randBetween,
 }

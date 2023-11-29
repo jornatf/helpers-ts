@@ -41,7 +41,7 @@ export const keyExists = (key: string, collection: any): boolean => {
  * @param arr Array
  * @returns Key
  */
-export const firstKey = (arr: any[]): string|number|null => {
+export const firstKey = (arr: any[]): string | number | null => {
     return Array.isArray(arr) && arr.length > 0 ? arr[0] : null
 }
 
@@ -51,7 +51,7 @@ export const firstKey = (arr: any[]): string|number|null => {
  * @param arr Array
  * @returns Key
  */
-export const lastKey = (arr: any[]): string|number|null => {
+export const lastKey = (arr: any[]): string | number | null => {
     return Array.isArray(arr) && arr.length > 0 ? arr[arr.length - 1] : null
 }
 
@@ -99,8 +99,8 @@ export const isEmpty = (arr: any[]): boolean => {
 export const shuffle = (arr: any[]) => {
     const shuffled = [...arr]
     for (let i = shuffled.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]]
+        const j = Math.floor(Math.random() * (i + 1))
+        ;[shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]]
     }
     return shuffled
 }

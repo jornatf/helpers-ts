@@ -7,9 +7,7 @@
  * @returns Slugified string
  */
 export const slugify = (str: string, sep: string = '_'): string => {
-    return str
-        .toLowerCase()
-        .replace(/ /g, sep)
+    return str.toLowerCase().replace(/ /g, sep)
 }
 
 /**
@@ -84,7 +82,8 @@ export const limitStr = (str: string, maxLength: number = 20): string => {
  */
 export const randomStr = (length: number = 10): string => {
     let result = ''
-    const char = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
+    const char =
+        'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
     const charLength = char.length
     for (let i = 0; i < length; i++) {
         result += char.charAt(Math.floor(Math.random() * charLength))
@@ -101,7 +100,11 @@ export const randomStr = (length: number = 10): string => {
  * @param str Target
  * @returns New string
  */
-export const replaceStr = (search: string, replacement: string, str: string): string => {
+export const replaceStr = (
+    search: string,
+    replacement: string,
+    str: string
+): string => {
     return str.split(search).join(replacement)
 }
 
