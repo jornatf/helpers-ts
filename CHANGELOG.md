@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.2.1 - 2023-11-29
+
+Fixed errors after Github test Action.
+
 ## v1.2.0 - 2023-11-29
 
 New helper added:
