@@ -17,6 +17,7 @@
 -   [Usage](#usage)
     -   [Strings](#strings)
     -   [Arrays](#arrays)
+    -   [Numbers](#numbers)
 -   [Changelog](#changelog)
 -   [Contributing](#contributing)
 -   [Credits](#credits)
@@ -207,6 +208,16 @@ Shuffles array keys.
 shuffle([1, 2, 3, 4]) // [3, 1, 4, 2]
 ```
 
+### Numbers
+
+#### `randBetween`
+
+Returns a random number between `min` and `max`.
+
+```javascript
+randBetween(5,10) // 8
+```
+
 ## Changelog
 
 > Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
@@ -227,7 +238,3 @@ shuffle([1, 2, 3, 4]) // [3, 1, 4, 2]
 The MIT License (MIT).
 
 > Please see [License File](LICENSE.md) for more information.
-
-```
-
-```
